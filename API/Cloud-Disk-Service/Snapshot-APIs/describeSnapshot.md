@@ -2,7 +2,7 @@
 
 
 ## Description
-Query cloud disk snapshot information details
+Query Cloud Disk Snapshot Details
 
 ## Request method
 GET
@@ -16,30 +16,30 @@ https://disk.jdcloud-api.com/v1/regions/{regionId}/snapshots/{snapshotId}
 |**snapshotId**|String|True||Snapshot ID|
 
 ## Request parameter
-无
+None
 
 
 ## Return parameter
 |Name|Type|Description|
 |---|---|---|
 |**requestId**|String|Request ID|
-|**result**|[Result](##Result)|Cloud disk snapshot information details queried|
+|**result**|Result|Cloud Disk Snapshot Details|
 
 
-### <a name="Result">Result</a>
+### Result
 |Name|Type|Description|
 |---|---|---|
-|**snapshot**|[Snapshot](##Snapshot)||
-### <a name="Snapshot">Snapshot</a>
+|**snapshot**|Snapshot||
+### Snapshot
 |Name|Type|Description|
 |---|---|---|
 |**createTime**|String|Creation Time|
 |**description**|String|Snapshot Description|
-|**diskId**|String|Cloud disk service ID used to create the snapshot|
+|**diskId**|String|Cloud Disk ID used to create the snapshot|
 |**name**|String|Snapshot Name|
 |**snapshotId**|String|Cloud Disk Snapshot ID|
 |**snapshotSizeGB**|Integer|Snapshot Size, in GiB|
-|**status**|String|Snapshot state, creating, available, in-use, deleting, error_create or error_delete|
+|**status**|String|Snapshot Status, creating, available, in-use, deleting, error_create or error_delete|
 
 ## Return code
 |Return code|Description|

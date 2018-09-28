@@ -16,16 +16,16 @@ https://mongodb.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/bac
 |**regionId**|String|True||Region ID|
 
 ## Request parameter
-无
+None
 
 
 ## Return parameter
 |Name|Type|Description|
 |---|---|---|
-|**result**|[Result](##Result)||
+|**result**|Result||
 
 
-### <a name="Result">Result</a>
+### Result
 |Name|Type|Description|
 |---|---|---|
 |**backupRetentionPeriod**|String||

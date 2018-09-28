@@ -2,7 +2,7 @@
 
 
 ## Description
-View certain resource monitoring data, which needs to designate the monitoring indicator and the time range.
+Get statistics for the specified metric. To get more precise data points, the user can narrow or increase the specified time range.
 
 ## Request method
 GET
@@ -12,52 +12,52 @@ https://monitor.jdcloud-api.com/v1/regions/{regionId}/metrics/{metric}/metricDat
 
 |Name|Type|Required or not|Default value|Description|
 |---|---|---|---|---|
-|**metric**|String|True||English identifier (id) of monitoring item|
-|**regionId**|String|True||Region Id|
+|**metric**|String|True||Metric|
+|**regionId**|String|True||Region ID|
 
 ## Request parameter
 |Name|Type|Required or not|Default value|Description|
 |---|---|---|---|---|
 |**endTime**|String|False||Query end time of time range, UTC time, format: 2016-12- yyyy-MM-dd'T’HH:mm:ssZ (if it is blank, which shall be obtained by computing startTime and timeInterval)|
-|**resourceId**|String|True||uuid of resource|
-|**serviceCode**|String|True||Type of resource, taking values such as vm, lb, ip, database|
+|**resourceId**|String|True||Uuid of Resource|
+|**serviceCode**|String|True||Type of resource, taking values such as vm, lb, ip, and database|
 |**startTime**|String|False||Query start time of time range, UTC time, format: yyyy-MM-dd'T’HH:mm:ssZ (current time by default, if it is earlier than 30d, it will be reset to 30d)|
-|**tags**|[TagFilter[]](##TagFilter)|False||Customized tag|
+|**tags**|TagFilter[]|False||Customized Tag|
 |**timeInterval**|String|False||Time interval: 1h, 6h, 12h, 1d, 3d, 7d, 14d, fixed time interval, fill in at least one of timeInterval and endTime|
 
-### <a name="TagFilter">TagFilter</a>
+### TagFilter
 |Name|Type|Required or not|Default value|Description|
 |---|---|---|---|---|
-|**key**|String|True||Tag key|
-|**values**|String[]|True||Tag value|
+|**key**|String|True||Tag Key|
+|**values**|String[]|True||Tag Value|
 
 ## Return parameter
 |Name|Type|Description|
 |---|---|---|
-|**requestId**|String|Requested identifier id|
-|**result**|[Result](##Result)||
+|**requestId**|String|Request ID|
+|**result**|Result||
 
 
-### <a name="Result">Result</a>
+### Result
 |Name|Type|Description|
 |---|---|---|
-|**metricDatas**|[MetricData[]](##MetricData)||
-### <a name="MetricData">MetricData</a>
+|**metricDatas**|MetricData[]||
+### MetricData
 |Name|Type|Description|
 |---|---|---|
-|**data**|[DataPoint[]](##DataPoint)||
-|**metric**|[Metric](##Metric)||
-### <a name="DataPoint">DataPoint</a>
+|**data**|DataPoint[]||
+|**metric**|Metric||
+### DataPoint
 |Name|Type|Description|
 |---|---|---|
-|**timestamp**|Integer|Time stamp|
-|**value**|String|Value|
-### <a name="Metric">Metric</a>
+|**timestamp**|Integer|Time Stamp|
+|**value**|String|Value        |
+### Metric
 |Name|Type|Description|
 |---|---|---|
-|**calculateUnit**|String|Computing unit of indicator, such as bit/s, %, k|
-|**metric**|String|English identifier of monitoring item|
-|**metricName**|String|Name of monitoring item|
+|**calculateUnit**|String|Computing Unit of Metric, such as bit/s, %, and k|
+|**metric**|String|English Identifier of Monitoring Item|
+|**metricName**|String|Name of Monitoring Item|
 
 ## Return code
 |Return code|Description|

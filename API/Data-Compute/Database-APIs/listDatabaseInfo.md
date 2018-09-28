@@ -17,27 +17,27 @@ https://xdata.jdcloud-api.com/v1/regions/{regionId}/dwDatabase
 ## Request parameter
 |Name|Type|Required or not|Default value|Description|
 |---|---|---|---|---|
-|**instanceName**|String|True||Instance name|
+|**instanceName**|String|True||Instance Name|
 
 
 ## Return parameter
 |Name|Type|Description|
 |---|---|---|
 |**requestId**|String||
-|**result**|[Result](##Result)||
+|**result**|Result||
 
 
-### <a name="Result">Result</a>
+### Result
 |Name|Type|Description|
 |---|---|---|
-|**data**|[DwDatabaseInfo[]](##DwDatabaseInfo)||
+|**data**|DwDatabaseInfo[]||
 |**message**|String||
 |**status**|Boolean||
-### <a name="DwDatabaseInfo">DwDatabaseInfo</a>
+### DwDatabaseInfo
 |Name|Type|Description|
 |---|---|---|
-|**comments**|String|Description information|
-|**databaseName**|String|Database name|
+|**comments**|String|Description  Information|
+|**databaseName**|String|Database Name|
 |**owner**|String|Owner|
 
 ## Return code

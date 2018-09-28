@@ -15,20 +15,20 @@ https://mongodb.jdcloud-api.com/v1/regions/{regionId}/availableZones
 |**regionId**|String|True||Region ID|
 
 ## Request parameter
-无
+None
 
 
 ## Return parameter
 |Name|Type|Description|
 |---|---|---|
-|**result**|[Result](##Result)||
+|**result**|Result||
 
 
-### <a name="Result">Result</a>
+### Result
 |Name|Type|Description|
 |---|---|---|
-|**availableZones**|[AvailableZones[]](##AvailableZones)||
-### <a name="AvailableZones">AvailableZones</a>
+|**availableZones**|AvailableZones[]||
+### AvailableZones
 |Name|Type|Description|
 |---|---|---|
 |**az**|String|Availability Zone|

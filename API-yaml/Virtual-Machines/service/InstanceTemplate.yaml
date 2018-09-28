@@ -2,7 +2,7 @@ swagger: "2.0"
 info:
   version: "v1"
   title: Start Template
-  description: APIs related to start template
+  description: "APIs related to start template"
 
 basePath: /regions/{regionId}
 
@@ -21,21 +21,21 @@ paths:
         - name: instanceTemplateData
           in: body
           required: true
-          description: Start template data
+          description: "Start template data"
           schema:
             $ref: "../model/InstanceTemplateSpec.yaml#/definitions/instanceTemplateSpec"
         - name: name
           in: query
           type: string
           required: true
-          description: Name of the start template,  <a href="https://www.jdcloud.com/help/detail/3870/isCatalog/1">Refer to the public parameter specification </a>.
+          description: "Name of the start template,  <a href='https://www.jdcloud.com/help/detail/3870/isCatalog/1'>Refer to the public parameter specification </a>."
         - name: description
           in: query
           type: string
-          description: Description of the start template,  <a href="https://www.jdcloud.com/help/detail/3870/isCatalog/1">Refer to the public parameter specification </a>.
+          description: "Description of the start template,  <a href='https://www.jdcloud.com/help/detail/3870/isCatalog/1'>Refer to the public parameter specification </a>."
       responses:
         200:
-          description: OK
+          description: "OK"
           schema:
             properties:
               result:
@@ -84,7 +84,7 @@ paths:
             instanceTemplateId-Start template ID, exact match, multiple support
       responses:
         200:
-          description: OK
+          description: "OK"
           schema:
             properties:
               result:
@@ -117,7 +117,7 @@ paths:
       x-jdcloud-internal: true
       responses:
         200:
-          description: OK
+          description: "OK"
           schema:
             type: object
             properties:
@@ -144,7 +144,7 @@ paths:
       x-jdcloud-internal: true
       responses:
         200:
-          description: OK
+          description: "OK"
         400:
           description: "Invalid parameter"
         401:
@@ -166,14 +166,14 @@ paths:
         - name: description
           in: query
           type: string
-          description: Template description, <a href="https://www.jdcloud.com/help/detail/3870/isCatalog/1">Refer to the public parameter specification</a>.
+          description: "Template description, <a href='https://www.jdcloud.com/help/detail/3870/isCatalog/1'>Refer to the public parameter specification</a>."
         - name: name
           in: query
           type: string
-          description: Template name, <a href="https://www.jdcloud.com/help/detail/3870/isCatalog/1">Refer to the public parameter specification</a>.
+          description: "Template name, <a href='https://www.jdcloud.com/help/detail/3870/isCatalog/1'>Refer to the public parameter specification</a>."
       responses:
         200:
-          description: OK
+          description: "OK"
         400:
           description: "Invalid parameter"
         401:
@@ -195,7 +195,7 @@ paths:
       x-jdcloud-internal: true
       responses:
         200:
-          description: OK
+          description: "OK"
         400:
           description: "Invalid parameter"
         401:
@@ -215,10 +215,10 @@ parameters:
     in: path
     required: true
     type: string
-    description: Region ID
+    description: "Region ID"
   instanceTemplate:
     name: instanceTemplateId
     in: path
     required: true
     type: string
-    description: Start template ID
+    description: "Start template ID"

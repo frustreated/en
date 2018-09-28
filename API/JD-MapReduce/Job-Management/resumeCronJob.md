@@ -12,7 +12,7 @@ https://idata-jmr-api.jcloud.com/v1/regions/{regionId}/cronJob/{planId}:resume
 
 |Name|Type|Required or not|Default value|Description|
 |---|---|---|---|---|
-|**planId**|String|True||Task ID to be recovered|
+|**planId**|String|True||Task ID to be Recovered|
 |**regionId**|String|True||Region ID|
 
 ## Request parameter
@@ -24,10 +24,10 @@ https://idata-jmr-api.jcloud.com/v1/regions/{regionId}/cronJob/{planId}:resume
 |Name|Type|Description|
 |---|---|---|
 |**requestId**|String||
-|**result**|[Result](##Result)||
+|**result**|Result||
 
 
-### <a name="Result">Result</a>
+### Result
 |Name|Type|Description|
 |---|---|---|
 |**message**|String||

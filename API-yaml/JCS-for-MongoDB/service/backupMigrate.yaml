@@ -2,20 +2,20 @@ swagger: "2.0"
 info:
   version: "v1"
   title: Cross-region Backup Management
-  description: API related to Relational MONGODB Service
+  description: "API related to Relational MONGODB Service"
 
 basePath: /regions/{regionId}
 
 paths:
   "/backupSynchronicities": #Cross-region Backup Synchronization Service
     post:
-      description: Create Cross-region Backup Synchronization Service
+      description: "Create Cross-region Backup Synchronization Service"
       operationId: createBackupSynchronicity
       x-jdcloud-internal: true
       parameters:
         - name: createBackupSynchronicity
           in: body
-          description:
+          description: 
           schema:
             type: object
             required:
@@ -25,16 +25,16 @@ paths:
             properties:
               instanceId:
                 type: string
-                description: Source Instance ID
+                description: "Source Instance ID"
               srcRegion:
                 type: string
-                description: Source Instance Location
+                description: "Source Instance Location"
               dstRegion:
                 type: string
-                description: Target Zone for Backup Synchronization
+                description: "Target Zone for Backup Synchronization"
       responses:
         200:
-          description: OK
+          description: "OK"
           schema:
             properties:
               result:
@@ -45,18 +45,18 @@ paths:
                 type: string
 
     get:
-      description: Query Cross-region Backup Synchronization Service
+      description: "Query Cross-region Backup Synchronization Service"
       operationId: describeBackupSynchronicities
       x-jdcloud-internal: true
       parameters:
         - name: pageNumber
           in: query
           type: integer
-          description: "Page number; default: 1; value range: [1, ∞)"
+          description: "Page Number; Default: 1; Value range: [1, ∞)"
         - name: pageSize
           in: query
           type: integer
-          description: "Page size; default: 10; value range: [10,100]"
+          description: "Page Size; Default: 10; Value range: [1,100]"
         - name: filters
           in: query
           type: array
@@ -65,7 +65,7 @@ paths:
           description:
       responses:
         200:
-          description: OK
+          description: "OK"
           schema:
             properties:
               result:
@@ -81,14 +81,14 @@ paths:
               requestId:
                 type: string
 
-  "/backupSynchronicities/{serviceId}": #Delete A Cross-region Backup Synchronization Service
+  "/backupSynchronicities/{serviceId}": #Delete a Cross-region Backup Synchronization Service
     delete:
-      description: Delete Cross-region Backup Synchronization Service
+      description: "Delete Cross-region Backup Synchronization Service"
       operationId: deleteBackupSynchronicities
       x-jdcloud-internal: true
       responses:
         200:
-          description: OK
+          description: "OK"
           schema:
             properties:
               result:
@@ -105,12 +105,12 @@ parameters:
     in: path
     required: true
     type: string
-    description: Region ID
+    description: "Region ID"
   serviceId:
     name: serviceId
     in: path
     required: true
     type: string
-    description: service ID
+    description: "service ID"
 
 

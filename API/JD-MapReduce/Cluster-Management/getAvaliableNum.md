@@ -15,26 +15,26 @@ https://idata-jmr-api.jcloud.com/v1/regions/{regionId}/avaliableNum
 |**regionId**|String|True||Region ID|
 
 ## Request parameter
-无
+None
 
 
 ## Return parameter
 |Name|Type|Description|
 |---|---|---|
 |**requestId**|String||
-|**result**|[Result](##Result)||
+|**result**|Result||
 
 
-### <a name="Result">Result</a>
+### Result
 |Name|Type|Description|
 |---|---|---|
-|**data**|[AvailableNumData](##AvailableNumData)|The number of remaining resources that can be created|
+|**data**|AvailableNumData|The number of remaining resources that can be created|
 |**message**|String||
 |**status**|String||
-### <a name="AvailableNumData">AvailableNumData</a>
+### AvailableNumData
 |Name|Type|Description|
 |---|---|---|
-|**serverNum**|Integer|Number of available services|
+|**serverNum**|Integer|Number of Available Services|
 
 ## Return code
 |Return code|Description|

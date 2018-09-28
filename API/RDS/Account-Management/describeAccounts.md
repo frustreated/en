@@ -8,7 +8,7 @@ View all account information in an RDS instance, including the account name, acc
 GET
 
 ## Request address
-https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/accounts
+https://rds.jdcloud-api.com/0.2.9/regions/{regionId}/instances/{instanceId}/accounts
 
 |Name|Type|Required or not|Default value|Description|
 |---|---|---|---|---|
@@ -16,26 +16,26 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/account
 |**regionId**|String|True||Region code, with range detailed in [Regions and Availability Zone Comparison Table](../Enum-Definitions/Regions-AZ.md)|
 
 ## Request parameter
-无
+None
 
 
 ## Return parameter
 |Name|Type|Description|
 |---|---|---|
-|**result**|[Result](##Result)||
+|**result**|Result||
 
 
-### <a name="Result">Result</a>
+### Result
 |Name|Type|Description|
 |---|---|---|
-|**accounts**|[Account[]](##Account)||
-### <a name="Account">Account</a>
+|**accounts**|Account[]||
+### Account
 |Name|Type|Description|
 |---|---|---|
 |**accountName**|String|Account name with specific rules detailed in the Help Center Documentation: [Name and Password Restrictions](../../../documentation/Cloud-Database-and-Cache/RDS/Introduction/Restrictions/SQLServer-Restrictions.md)|
-|**accountPrivileges**|[AccountPrivilege[]](##AccountPrivilege)|Specific Privilege|
+|**accountPrivileges**|AccountPrivilege[]|Specific Privilege|
 |**accountStatus**|String|Account status, detailed in [Enumeration Parameter Definition](../Enum-Definitions/Enum-Definitions.md)<br>- **MySQL: Not support, not return this field**<br>- **SQL Server: return this field**|
-### <a name="AccountPrivilege">AccountPrivilege</a>
+### AccountPrivilege
 |Name|Type|Description|
 |---|---|---|
 |**dbName**|String|Database name with specific rules detailed in the Help Center Documentation: [Name and Password Restrictions](../../../documentation/Cloud-Database-and-Cache/RDS/Introduction/Restrictions/SQLServer-Restrictions.md)|

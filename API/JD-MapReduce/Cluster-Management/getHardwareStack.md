@@ -2,7 +2,7 @@
 
 
 ## Description
-Hardware configuration information list
+Hardware Configuration Information List
 
 ## Request method
 GET
@@ -15,37 +15,37 @@ https://idata-jmr-api.jcloud.com/v1/regions/{regionId}/hardwareStack
 |**regionId**|String|True||Region ID|
 
 ## Request parameter
-无
+None
 
 
 ## Return parameter
 |Name|Type|Description|
 |---|---|---|
 |**requestId**|String||
-|**result**|[Result](##Result)||
+|**result**|Result||
 
 
-### <a name="Result">Result</a>
+### Result
 |Name|Type|Description|
 |---|---|---|
-|**data**|[HardWareStackData](##HardWareStackData)|Hardware information queried|
+|**data**|HardWareStackData|Hardware Information Queried|
 |**message**|String||
 |**status**|String||
-### <a name="HardWareStackData">HardWareStackData</a>
+### HardWareStackData
 |Name|Type|Description|
 |---|---|---|
-|**disk**|[Disk[]](##Disk)||
-|**scale**|[Scale[]](##Scale)||
-### <a name="Disk">Disk</a>
+|**disk**|Disk[]||
+|**scale**|Scale[]||
+### Disk
 |Name|Type|Description|
 |---|---|---|
-|**limit**|String|Maximum disk capacity|
-|**volumeType**|String|Disk capacity type|
-### <a name="Scale">Scale</a>
+|**limit**|String|Maximum Disk Capacity|
+|**volumeType**|String|Disk Capacity Type|
+### Scale
 |Name|Type|Description|
 |---|---|---|
-|**core**|Integer|CPU core number|
-|**memory**|Integer|Memory size, with the unit of G|
+|**core**|Integer|CPU Core Number|
+|**memory**|Integer|Memory Size, Unit: G|
 
 ## Return code
 |Return code|Description|

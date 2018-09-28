@@ -16,21 +16,21 @@ https://mongodb.jdcloud-api.com/v1/regions/{regionId}/backups/{backupId}/downloa
 |**regionId**|String|True||Region ID|
 
 ## Request parameter
-无
+None
 
 
 ## Return parameter
 |Name|Type|Description|
 |---|---|---|
 |**requestId**|String||
-|**result**|[Result](##Result)||
+|**result**|Result||
 
 
-### <a name="Result">Result</a>
+### Result
 |Name|Type|Description|
 |---|---|---|
-|**backupDownloadURL**|[BackupDownloadURL](##BackupDownloadURL)||
-### <a name="BackupDownloadURL">BackupDownloadURL</a>
+|**backupDownloadURL**|BackupDownloadURL||
+### BackupDownloadURL
 |Name|Type|Description|
 |---|---|---|
 |**backupInternetDownloadURL**|String|Address of Public Network Download Link|

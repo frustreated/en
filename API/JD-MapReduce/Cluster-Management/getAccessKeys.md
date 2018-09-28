@@ -15,34 +15,34 @@ https://idata-jmr-api.jcloud.com/v1/regions/{regionId}/accessKeys
 |**regionId**|String|True||Region ID|
 
 ## Request parameter
-无
+None
 
 
 ## Return parameter
 |Name|Type|Description|
 |---|---|---|
 |**requestId**|String||
-|**result**|[Result](##Result)||
+|**result**|Result||
 
 
-### <a name="Result">Result</a>
+### Result
 |Name|Type|Description|
 |---|---|---|
-|**data**|[UserAccessKey](##UserAccessKey)|User’s AK/SK|
+|**data**|UserAccessKey|User’s AK/SK|
 |**message**|String||
 |**status**|String||
-### <a name="UserAccessKey">UserAccessKey</a>
+### UserAccessKey
 |Name|Type|Description|
 |---|---|---|
 |**accessKey**|String|Access key, AccessKey is used for calling cloud service API with program method|
 |**accessKeySecret**|String|AccessKeySecret is the key pair used to verify the user|
-|**account**|String|User account|
-|**created**|String|Creation time|
-|**expire**|String|Expiration time|
-|**id**|Integer|User pass id|
-|**modified**|String|Update time|
-|**modifier**|String|Update operator|
-|**pin**|String|User name|
+|**account**|String|User Account|
+|**created**|String|Creation Time|
+|**expire**|String|Expiration Time|
+|**id**|Integer|User Pass ID|
+|**modified**|String|Update Time|
+|**modifier**|String|Update Operator|
+|**pin**|String|User Name|
 |**state**|Integer|Status|
 |**yn**|Integer||
 

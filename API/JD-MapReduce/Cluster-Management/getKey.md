@@ -15,23 +15,23 @@ https://idata-jmr-api.jcloud.com/v1/regions/{regionId}/key
 |**regionId**|String|True||Region ID|
 
 ## Request parameter
-无
+None
 
 
 ## Return parameter
 |Name|Type|Description|
 |---|---|---|
 |**requestId**|String||
-|**result**|[Result](##Result)||
+|**result**|Result||
 
 
-### <a name="Result">Result</a>
+### Result
 |Name|Type|Description|
 |---|---|---|
-|**data**|[AppModel](##AppModel)|AK/SK queried|
+|**data**|AppModel|AK/SK Queried|
 |**message**|String||
 |**status**|String||
-### <a name="AppModel">AppModel</a>
+### AppModel
 |Name|Type|Description|
 |---|---|---|
 |**appKey**|String|AK|

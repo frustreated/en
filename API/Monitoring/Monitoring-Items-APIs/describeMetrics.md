@@ -2,7 +2,7 @@
 
 
 ## Description
-Query indicator list available to get monitoring data based on resource type
+Query metric list to get monitoring data list based on product type
 
 ## Request method
 GET
@@ -16,28 +16,28 @@ https://monitor.jdcloud-api.com/v1/metrics
 ## Request parameter
 |Name|Type|Required or not|Default value|Description|
 |---|---|---|---|---|
-|**serviceCode**|String|True||Type of resource: <br>vm--> virtual machine<br>disk-->cloud disk<br>ip--> public IP<br>balance-->load balancer<br>database-->MySQL Service revision<br>cdn-->JD CDN<br>redis-->redis cloud cache<br>mongodb-->mongoDB cloud cache<br>storage-->cloud storage<br>sqlserver-->cloud database sqlserver revision <br>nativecontainer-->container<br>|
+|**serviceCode**|String|True||Product Name: <br>vm--> Virtual Machine<br>disk-->Cloud Disk Service<br>ip--> Public IP<br>balance-->Load Balancer<br>database-->MySQL Service Version<br>cdn-->JD CDN<br>redis-->JCS for Redis<br>mongodb-->MongoDB Cloud Cache<br>storage-->Cloud Storage<br>sqlserver-->cloud Database Sqlserver Version <br>nativecontainer-->Container<br>|
 
 
 ## Return parameter
 |Name|Type|Description|
 |---|---|---|
-|**requestId**|String|Requested identifier id|
-|**result**|[Result](##Result)||
+|**requestId**|String|Request ID|
+|**result**|Result||
 
 
-### <a name="Result">Result</a>
+### Result
 |Name|Type|Description|
 |---|---|---|
-|**metrics**|[MetricDetail[]](##MetricDetail)||
-### <a name="MetricDetail">MetricDetail</a>
+|**metrics**|MetricDetail[]||
+### MetricDetail
 |Name|Type|Description|
 |---|---|---|
-|**calculateUnit**|String|Computing unit of indicator, such as bit/s, %, byte|
-|**downSample**|String|Sampling frequency|
-|**metric**|String|English identifier of monitoring indicator|
-|**metricName**|String|Name of monitoring indicator|
-|**serviceCode**|String|Identifier of resource type|
+|**calculateUnit**|String|Computing unit of metric, such as bit/s, %, and byte|
+|**downSample**|String|Sampling Frequency|
+|**metric**|String|Metric|
+|**metricName**|String|Metric Name|
+|**serviceCode**|String|Identifier of Resource Type|
 
 ## Return code
 |Return code|Description|

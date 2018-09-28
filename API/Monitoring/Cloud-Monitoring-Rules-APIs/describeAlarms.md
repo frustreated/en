@@ -29,14 +29,14 @@ https://monitor.jdcloud-api.com/v1/regions/{regionId}/alarms
 ## Return parameter
 |Name|Type|Description|
 |---|---|---|
-|**requestId**|String|Requested identifier id|
-|**result**|[Result](##Result)||
+|**requestId**|String|Request ID|
+|**result**|Result||
 
 
 ### <a name="Result">Result</a>
 |Name|Type|Description|
 |---|---|---|
-|**alarmList**|[Alarm[]](##Alarm)|List of rules|
+|**alarmList**|Alarm[]|List of rules|
 |**numberPages**|Number|Number of total pages|
 |**numberRecords**|Number|Number of total records|
 |**pageNumber**|Number|Page|
@@ -45,8 +45,8 @@ https://monitor.jdcloud-api.com/v1/regions/{regionId}/alarms
 |Name|Type|Description|
 |---|---|---|
 |**calculation**|String|Statistical method: average value=avg, maximum value=max, minimum value=min,|
-|**contactGroups**|String[]|Contact group notified, for example [“contact group 1”, “contact group 2”]|
-|**contactPersons**|String[]|Contact notified, for example“[‘contact 1’, ‘contact 2’]”|
+|**contactGroups**|String[]|Notify contact group, for example [“contact group 1”, “contact group 2”]|
+|**contactPersons**|String[]|Notify contact, for example“[‘contact 1’, ‘contact 2’]”|
 |**createTime**|String|Creation time|
 |**enabled**|Integer|Enable&Disable 1 Enable, 0 Disable|
 |**id**|String|Rule id|

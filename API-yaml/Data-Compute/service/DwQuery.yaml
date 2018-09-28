@@ -2,7 +2,7 @@ swagger: "2.0"
 info:
   version: "v1"
   title: query
-  description: API related to XDATA-DW query
+  description: "API related to XDATA-DW query"
 
 basePath: /regions/{regionId}
 
@@ -17,42 +17,42 @@ paths:
               in: query
               type: string
               required: false
-              description: "Database name"
+              description: "Database Name"
             - name: sql
               in: query
               type: string
               required: true
-              description: "sql script"
+              description: "Sql Script"
             - name: userName
               in: query
               type: string
               required: true
-              description: "User name"
+              description: "User Name"
             - name: queueName
               in: query
               type: string
               required: false
-              description: "Queue name"
+              description: "Queue Name"
             - name: source
               in: query
               type: string
               required: false
-              description: "Resource name"
+              description: "Resource Name"
             - name: callBackURL
               in: query
               type: string
               required: false
-              description: "Callback address name"
+              description: "Callback Address Name"
             - name: instanceName
               in: query
               type: string
               required: true
-              description: "Instance name"
+              description: "Instance Name"
             - name: instanceOwnerName
               in: query
               type: string
               required: false
-              description: "Instance owner name"
+              description: "Instance Owner Name"
             - name: isExplain
               in: query
               type: string
@@ -60,7 +60,7 @@ paths:
               description: "Is interpretation required or not"
           responses:
             200:
-              description: OK
+              description: "OK"
               schema:
                 properties:
                   result:
@@ -86,30 +86,30 @@ paths:
               in: query
               type: string
               required: true
-              description: "PySpark script"
+              description: "PySpark Script"
             - name: userName
               in: query
               type: string
               required: true
-              description: "User name"
+              description: "User Name"
             - name: instanceName
               in: query
               type: string
               required: true
-              description: "Instance name"
+              description: "Instance Name"
             - name: instanceOwnerName
               in: query
               type: string
               required: false
-              description: "Instance owner name"
+              description: "Instance Owner Name"
             - name: scriptType
               in: query
               type: string
               required: false
-              description: "Script type name"
+              description: "Script Type Name"
           responses:
             200:
-              description: OK
+              description: "OK"
               schema:
                 properties:
                   result:
@@ -133,7 +133,7 @@ paths:
               in: query
               type: string
               required: true
-              description: "User name"
+              description: "User Name"
             - name: queryId
               in: query
               type: string
@@ -141,7 +141,7 @@ paths:
               description: "Search an id name"
           responses:
             200:
-              description: OK
+              description: "OK"
               schema:
                 properties:
                   result:
@@ -167,7 +167,7 @@ paths:
               in: query
               type: string
               required: true
-              description: "User name"
+              description: "User Name"
             - name: queryId
               in: query
               type: string
@@ -175,7 +175,7 @@ paths:
               description: "Search an id"
           responses:
             200:
-              description: OK
+              description: "OK"
               schema:
                 properties:
                   result:
@@ -201,7 +201,7 @@ paths:
               in: query
               type: string
               required: true
-              description: "User name"
+              description: "User Name"
             - name: queryId
               in: query
               type: string
@@ -209,7 +209,7 @@ paths:
               description: "Search an id"
           responses:
             200:
-              description: OK
+              description: "OK"
               schema:
                 properties:
                   result:
@@ -233,7 +233,7 @@ paths:
               in: query
               type: string
               required: true
-              description: "User name"
+              description: "User Name"
             - name: queryId
               in: query
               type: string
@@ -241,7 +241,7 @@ paths:
               description: "Search an id"
           responses:
             200:
-              description: OK
+              description: "OK"
               schema:
                 properties:
                   result:
@@ -265,7 +265,7 @@ paths:
               in: query
               type: string
               required: true
-              description: "User name"
+              description: "User Name"
             - name: queryId
               in: query
               type: string
@@ -273,7 +273,7 @@ paths:
               description: "Search an id"
           responses:
             200:
-              description: OK
+              description: "OK"
               schema:
                 properties:
                   result:
@@ -297,7 +297,7 @@ paths:
               in: query
               type: string
               required: true
-              description: "User name"
+              description: "User Name"
             - name: queryId
               in: query
               type: string
@@ -305,7 +305,7 @@ paths:
               description: "Search an id"
           responses:
             200:
-              description: OK
+              description: "OK"
               schema:
                 properties:
                   result:
@@ -329,7 +329,7 @@ paths:
               in: query
               type: string
               required: true
-              description: "User name"
+              description: "User Name"
             - name: queryId
               in: query
               type: string
@@ -337,7 +337,7 @@ paths:
               description: "Search an id"
           responses:
             200:
-              description: OK
+              description: "OK"
               schema:
                 properties:
                   result:
@@ -351,11 +351,11 @@ paths:
             500:
               description: "Internal server error"
 
-# Path general parameter
+# Path General Parameter
 parameters:
   regionId:
     name: regionId
     in: path
     required: true
     type: string
-    description: Region ID
+    description: "Region ID"

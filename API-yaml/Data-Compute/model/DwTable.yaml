@@ -7,49 +7,49 @@ definitions:
     properties:
       id:
         type: integer
-        description: Database id
+        description: "Database id"
       userName:
         type: string
-        description: User name
+        description: "User Name"
       dbName:
         type: string
-        description: Database name
+        description: "Database Name"
       tableName:
         type: string
-        description: Table name
+        description: "Table Name"
       createTime:
         type: string
-        description: Creation time
+        description: "Creation Time"
       lastUpdateTime:
         type: string
-        description: Last update time
+        description: "Last Update Time"
       physicalStorageCapacity:
         type: string
-        description: Physical storage
+        description: "Physical Storage"
       category:
         type: string
-        description: Category
+        description: "Category"
       source:
         type: string
-        description: Source
+        description: "Source"
       owner:
         type: string
-        description: Owner
+        description: "Owner"
       hiveFileFormat:
         type: string
-        description: File storage type
+        description: "File Storage Type"
       encryption:
         type: string
-        description: Is it encrypted or not
+        description: "Is it encrypted or not"
       location:
         type: string
-        description: Location
+        description: "Location"
       comments:
         type: string
-        description: Description information
+        description: "Description  Information"
       hiveObjectPrivileges:
         $ref: "../model/DwHiveObjectPrivileges.yaml#/definitions/dwHiveObjectPrivileges"
-        description: hive table permission information
+        description: "Hive Table Permission Information"
       parameters:
-        description: Parameter
+        description: "Parameter"
         type: object

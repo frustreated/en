@@ -7,7 +7,7 @@ definitions:
     properties:
       planId:
         type: number
-        description: Task scheduling id
+        description: "Task Scheduling id"
       planName:
         type: string
       planType:
@@ -16,31 +16,31 @@ definitions:
         type: string
       failurePolicy:
         type: string
-        description: Policy adopted when task scheduling is failed
+        description: "Policy adopted when task scheduling is failed"
       createTime:
         type: string
         format: date
-        description: Creation time
+        description: "Creation Time"
       modifyTime:
         type: string
         format: date
-        description: Modification time
+        description: "Modification Time"
       dataCenter:
         type: string
-        description: Data center, i.e. regionId
+        description: "Data Center, i.e. regionId"
       az:
         type: string
       jobGroup:
         type: string
       jobTrigger:
         type: string
-        description: Trigger
+        description: "Trigger"
       cronExpression:
         type: string
-        description: Time after formatt
+        description: "Time After Formatt"
       isSync:
         type: boolean
-      description:
+      description: 
         type: string
       jobIds:
         type: string

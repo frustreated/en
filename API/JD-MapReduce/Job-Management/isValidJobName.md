@@ -18,17 +18,17 @@ https://idata-jmr-api.jcloud.com/v1/regions/{regionId}/jobName:Validate
 |Name|Type|Required or not|Default value|Description|
 |---|---|---|---|---|
 |**jobId**|String|True||It is considered as the job name verification basis|
-|**jobName**|String|True||Job name to be verified|
+|**jobName**|String|True||Job Name to be Verified|
 
 
 ## Return parameter
 |Name|Type|Description|
 |---|---|---|
 |**requestId**|String||
-|**result**|[Result](##Result)||
+|**result**|Result||
 
 
-### <a name="Result">Result</a>
+### Result
 |Name|Type|Description|
 |---|---|---|
 |**message**|String||

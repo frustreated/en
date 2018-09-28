@@ -1,8 +1,8 @@
-swagger: "2.0"                                  # Implemented based on Swagger version 2.0
+Swagger: "2.0"                                  # Implemented based on Swagger Version 2.0
 info:
   version: "v1"                                 # OpenApi version number
   title: OSS APIs
-  description: OSS APIs
+  description: "OSS APIs"
 
 basePath: /regions/{regionId}
 
@@ -19,7 +19,7 @@ paths:
       - application/json
       responses:
         200:
-          description: OK
+          description: "OK"
           schema:
             properties:
               result:
@@ -34,11 +34,11 @@ paths:
                 type: string
 #            properties:
         400:
-          description: Invalid Argument
+          description: "Invalid Argument"
 #          schema:
 #            $ref: '../model/oss.yaml#/definitions/ErrorResponse'
         403:
-          description: Access Denied
+          description: "Access Denied"
 #          schema:
 #            $ref: '../model/oss.yaml#/definitions/ErrorResponse'
   /buckets/{bucketname}:
@@ -54,18 +54,18 @@ paths:
       parameters:
       - in: path
         name: bucketname
-        description: bucket name, e.g.: test-bucket
+        description: "bucket name, e.g.: test-bucket"
         required: true
         type: string
       responses:
         200:
-          description: OK
+          description: "OK"
         400:
-          description: Invalid Argument
+          description: "Invalid Argument"
         403:
-          description: Access Denied
+          description: "Access Denied"
         404:
-          description:   The specified bucket does not exist.
+          description: "The specified bucket does not exist."
     put:
       tags:
       - developers
@@ -78,22 +78,22 @@ paths:
       parameters:
       - in: path
         name: bucketname
-        description: bucket name, e.g.: test-bucket
+        description: "bucket name, e.g.: test-bucket"
         required: true
         type: string
       responses:
         200:
-          description: OK
+          description: "OK"
         400:
-          description: Invalid Argument
+          description: "Invalid Argument"
 #          schema:
 #            $ref: '../model/oss.yaml#/definitions/ErrorResponse'
         403:
-          description: Access Denied
+          description: "Access Denied"
 #          schema:
 #            $ref: '../model/oss.yaml#/definitions/ErrorResponse'
         409:
-          description: The requested bucket name is not available. The bucket namespace is shared by all users of the system. Please select a different name and try again.
+          description: "The requested bucket name is not available. The bucket namespace is shared by all users of the system. Please select a different name and try again."
 #          schema:
 #            $ref: '../model/oss.yaml#/definitions/ErrorResponse'
     delete:
@@ -108,22 +108,22 @@ paths:
       parameters:
       - in: path
         name: bucketname
-        description: bucket name, e.g.: test-bucket
+        description: "bucket name, e.g.: test-bucket"
         required: true
         type: string
       responses:
         200:
-          description: OK
+          description: "OK"
         400:
-          description: Invalid Argument
+          description: "Invalid Argument"
 #          schema:
 #            $ref: '../model/oss.yaml#/definitions/ErrorResponse'
         403:
-          description: Access Denied
+          description: "Access Denied"
 #          schema:
 #            $ref: '../model/oss.yaml#/definitions/ErrorResponse'
         404:
-          description: The specified bucket does not exist.
+          description: "The specified bucket does not exist."
 #          schema:
 #            $ref: '../model/oss.yaml#/definitions/ErrorResponse'
   /buckets/{bucketname}/objectkey/{objectkey}:
@@ -132,6 +132,7 @@ paths:
       - developers
       summary: moveObject
       operationId: moveObject
+      x-jdcloud-internal: true
       description: |
         moveobject
       produces:
@@ -139,22 +140,22 @@ paths:
       parameters:
       - in: path
         name: bucketname
-        description: bucket name, e.g.: test-bucket
+        description: "bucket name, e.g.: test-bucket"
         required: true
         type: string
       - in: path
         name: objectkey
-        description: objectkey, e.g.: test-object
+        description: "objectkey, e.g.: test-object"
         required: true
         type: string
       - in: header
         name: x-jss-move-source
-        description: source Information
+        description: "source Information"
         required: true
         type: string
       responses:
         200:
-          description: OK
+          description: "OK"
           schema:
             properties:
               result:
@@ -164,23 +165,23 @@ paths:
               requestId:
                 type: string
         400:
-          description: Invalid Argument
+          description: "Invalid Argument"
 #          schema:
 #            $ref: '../model/oss.yaml#/definitions/ErrorResponse'
         403:
-          description: Access Denied
+          description: "Access Denied"
 #          schema:
 #            $ref: '../model/oss.yaml#/definitions/ErrorResponse'
         404:
-          description: The specified bucket does not exist.
+          description: "The specified bucket does not exist."
 #          schema:
 #            $ref: '../model/oss.yaml#/definitions/ErrorResponse'
 
-# Path general parameter
+# Path General Parameter
 parameters:
   regionId:
     name: regionId
     in: path
     required: true
     type: string
-    description: Region ID, e.g.: cn-north-1
+    description: "Region ID, e.g.: cn-north-1"

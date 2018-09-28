@@ -8,7 +8,7 @@ Delete the database account. After the account is deleted, it cannot be restored
 DELETE
 
 ## Request address
-https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/accounts/{accountName}
+https://rds.jdcloud-api.com/0.2.9/regions/{regionId}/instances/{instanceId}/accounts/{accountName}
 
 |Name|Type|Required or not|Default value|Description|
 |---|---|---|---|---|
@@ -17,7 +17,7 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/account
 |**regionId**|String|True||Region code, with range detailed in [Regions and Availability Zone Comparison Table](../Enum-Definitions/Regions-AZ.md)|
 
 ## Request parameter
-无
+None
 
 
 ## Return parameter

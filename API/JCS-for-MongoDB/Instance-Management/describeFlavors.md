@@ -15,29 +15,29 @@ https://mongodb.jdcloud-api.com/v1/regions/{regionId}/flavors
 |**regionId**|String|True||Region ID|
 
 ## Request parameter
-无
+None
 
 
 ## Return parameter
 |Name|Type|Description|
 |---|---|---|
-|**result**|[Result](##Result)||
+|**result**|Result||
 
 
-### <a name="Result">Result</a>
+### Result
 |Name|Type|Description|
 |---|---|---|
-|**flavors**|[Flavor[]](##Flavor)||
-### <a name="Flavor">Flavor</a>
+|**flavors**|Flavor[]||
+### Flavor
 |Name|Type|Description|
 |---|---|---|
 |**cpu**|Integer|Number of CPU Cores|
 |**diskStep**|Integer|Disk Step Size|
 |**iops**|Integer|iops|
-|**maxDisk**|Integer|Maximum Number of Disks, in GB|
+|**maxDisk**|Integer|Maximum Number of Disks, Unit: GB|
 |**maxLink**|Integer|Maximum Connections|
-|**memory**|Integer|Memory, in GB|
-|**minDisk**|Integer|Minimum Number of Disks, in GB|
+|**memory**|Integer|Memory, Unit: GB|
+|**minDisk**|Integer|Minimum Number of Disks, Unit: GB|
 
 ## Return code
 |Return code|Description|

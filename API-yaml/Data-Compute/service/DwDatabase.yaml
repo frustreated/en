@@ -2,7 +2,7 @@ swagger: "2.0"
 info:
   version: "v1"
   title: database
-  description: API related to XDATA-DW database
+  description: "API related to XDATA-DW database"
 
 basePath: /regions/{regionId}
 
@@ -17,10 +17,10 @@ paths:
               in: query
               type: string
               required: true
-              description: "Instance name"
+              description: "Instance Name"
           responses:
             200:
-              description: OK
+              description: "OK"
               schema:
                 properties:
                   result:
@@ -39,7 +39,7 @@ paths:
               description: "Internal server error"
 
   "/dwDatabase/{databaseName}":
-    ###################### Create a DW database ######################
+    ###################### Create a DW Database ######################
         post:
           description: "Create a user instance database"
           operationId: createDatabase
@@ -48,15 +48,15 @@ paths:
               in: query
               type: string
               required: true
-              description: "Instance name"
+              description: "Instance Name"
             - name: description
               in: query
               type: string
               required: false
-              description: "Database description information"
+              description: "Database Description Information"
           responses:
             200:
-              description: OK
+              description: "OK"
               schema:
                 properties:
                   result:
@@ -79,10 +79,10 @@ paths:
               in: query
               type: string
               required: true
-              description: "Instance name"
+              description: "Instance Name"
           responses:
             200:
-              description: OK
+              description: "OK"
               schema:
                 properties:
                   result:
@@ -107,10 +107,10 @@ paths:
               in: query
               type: string
               required: true
-              description: "Instance name"
+              description: "Instance Name"
           responses:
             200:
-              description: OK
+              description: "OK"
               schema:
                 properties:
                   result:
@@ -124,17 +124,17 @@ paths:
             500:
               description: "Internal server error"
 
-# Path general parameter
+# Path General Parameter
 parameters:
   regionId:
     name: regionId
     in: path
     required: true
     type: string
-    description: Region ID
+    description: "Region ID"
   databaseName:
     name: databaseName
     in: path
     required: true
     type: string
-    description: Database name
+    description: "Database Name"

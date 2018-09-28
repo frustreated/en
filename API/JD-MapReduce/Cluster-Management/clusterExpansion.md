@@ -18,17 +18,17 @@ https://idata-jmr-api.jcloud.com/v1/regions/{regionId}/cluster:expansion
 |Name|Type|Required or not|Default value|Description|
 |---|---|---|---|---|
 |**clusterId**|String|True||Cluster ID to be expanded|
-|**expansionNum**|Integer|True||Expansion number|
+|**expansionNum**|Integer|True||Expansion Number|
 
 
 ## Return parameter
 |Name|Type|Description|
 |---|---|---|
 |**requestId**|String||
-|**result**|[Result](##Result)||
+|**result**|Result||
 
 
-### <a name="Result">Result</a>
+### Result
 |Name|Type|Description|
 |---|---|---|
 |**message**|String||

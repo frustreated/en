@@ -20,26 +20,26 @@ https://clouddnsservice.jdcloud-api.com/v1/regions/{regionId}/domain/{domainId}/
 |---|---|---|---|---|
 |**loadMode**|Integer|False||Display Mode|
 |**packId**|Integer|True||Package ID|
-|**viewId**|Integer|True||view ID, 0 in default|
+|**viewId**|Integer|True||View ID, 0 by default|
 
 
 ## Return parameter
 |Name|Type|Description|
 |---|---|---|
 |**requestId**|String|ID of this request|
-|**result**|[Result](##Result)||
+|**result**|Result||
 
 
-### <a name="Result">Result</a>
+### Result
 |Name|Type|Description|
 |---|---|---|
-|**data**|[ViewTree[]](##ViewTree)|Tree of the resolution line|
-### <a name="ViewTree">ViewTree</a>
+|**data**|ViewTree[]|Tree of Resolution Line|
+### ViewTree
 |Name|Type|Description|
 |---|---|---|
-|**children**|[ViewTree[]](##ViewTree)||
-|**disabled**|Boolean|Whether this resolution line is disabled|
-|**label**|String|Name of the resolution line|
+|**children**|ViewTree[]||
+|**disabled**|Boolean|Whether is this resolution line disabled|
+|**label**|String|Name of Resolution Line|
 |**leaf**|Boolean|Whether the data is a leaf node|
 |**value**|Integer|Resolution Line ID|
 

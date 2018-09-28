@@ -16,31 +16,31 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |**regionId**|String|True||The Region ID of the region where the Redis instance is located. At present, the Redis has North China, South China, and East China regions, and the corresponding Region IDs are cn-north-1, cn-south-1, and cn-east-2|
 
 ## Request parameter
-无
+None
 
 
 ## Return parameter
 |Name|Type|Description|
 |---|---|---|
 |**requestId**|String|ID of This Query Request|
-|**result**|[Result](##Result)|The information result of querying the cache instance list|
+|**result**|Result|The information result of querying the cache instance list|
 
 
 ### <a name="Result">Result</a>
 |Name|Type|Description|
 |---|---|---|
-|**cacheInstance**|[CacheInstance](##CacheInstance)|The information to query the object cache instance|
+|**cacheInstance**|CacheInstance|The information to query the object cache instance|
 ### <a name="CacheInstance">CacheInstance</a>
 |Name|Type|Description|
 |---|---|---|
-|**azId**|[AzId](##AzId)|az Information|
-|**cacheInstanceClass**|String|For instance type code, see<a href="https://www.jdcloud.com/help/detail/411/isCatalog/1">instance type code</a>|
+|**azId**|AzId|az Information|
+|**cacheInstanceClass**|String|For instance type code, see <a href="https://www.jdcloud.com/help/detail/411/isCatalog/1">instance type code</a>|
 |**cacheInstanceDescription**|String|Instance Description|
 |**cacheInstanceId**|String|Instance ID|
 |**cacheInstanceMemoryMB**|Integer|Capacity, in MB|
 |**cacheInstanceName**|String|Instance Name|
 |**cacheInstanceStatus**|String|Instance status, running: running, error: error, creating: pending, changing: changing, deleting: deleting|
-|**charge**|[Charge](##Charge)|Billing Information|
+|**charge**|Charge|Billing Information|
 |**connectionDomain**|String|Access to the domain name|
 |**createTime**|String|Creation Time|
 |**instanceVersion**|String|Instance Version|

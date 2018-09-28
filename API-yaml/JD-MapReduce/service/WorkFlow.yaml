@@ -2,11 +2,11 @@ swagger: "2.0"
 info:
   version: "v1"
   title: Workflow Management
-  description: JMR workflow management
+  description: "JMR workflow management"
 
 basePath: /regions/{regionId}
 paths:
-###################### Obtain the workflow list ###########################
+###################### Obtain the Workflow List ###########################
   "/{workflowName}:list":
        post:
          description: "Obtain the workflow list"
@@ -16,7 +16,7 @@ paths:
              in: path
              required: true
              type: string
-             description: "Workflow name"
+             description: "Workflow Name"
            - name: selectParams
              in: body
              required: false
@@ -24,7 +24,7 @@ paths:
                $ref: "../model/SelectParams.yaml#/definitions/selectParams"
          responses:
            200:
-             description: OK
+             description: "OK"
              schema:
                properties:
                  result:
@@ -50,7 +50,7 @@ paths:
            500:
              description: "Internal server error"
 
-###################### Save the workflow ###########################
+###################### Save the Workflow ###########################
   "/workflow:save":
        post:
          description: "Save the workflow information"
@@ -63,7 +63,7 @@ paths:
                $ref: "../model/EmrWorkflow.yaml#/definitions/emrWorkflow"
          responses:
            200:
-             description: OK
+             description: "OK"
              schema:
                properties:
                  result:
@@ -78,7 +78,7 @@ paths:
                    type: string
            500:
              description: "Internal server error"
-###################### Delete the workflow ###########################
+###################### Delete the Workflow ###########################
   "/{workflowId}:delete":
        post:
          description: "Delete the specified workflow"
@@ -88,10 +88,10 @@ paths:
              in: path
              required: true
              type: string
-             description: Workflow ID
+             description: "Workflow ID"
          responses:
            200:
-             description: OK
+             description: "OK"
              schema:
                properties:
                  result:
@@ -104,7 +104,7 @@ paths:
                    type: string
            500:
              description: "Internal server error"
-###################### Run the workflow ###########################
+###################### Run the Workflow ###########################
   "/{workflowId}:run":
        post:
          description: "Run the specified workflow"
@@ -114,10 +114,10 @@ paths:
              in: path
              required: true
              type: string
-             description: Workflow ID
+             description: "Workflow ID"
          responses:
            200:
-             description: OK
+             description: "OK"
              schema:
                properties:
                  result:
@@ -130,7 +130,7 @@ paths:
                    type: string
            500:
              description: "Internal server error"
-###################### View the workflow details ###########################
+###################### View the Workflow Details ###########################
   "/wfInstance:detail":
        post:
          description: "View the detailed information of the specified workflow"
@@ -148,10 +148,10 @@ paths:
                    type: string
                  wfId:
                    type: string
-             description: Workflow ID
+             description: "Workflow ID"
          responses:
            200:
-             description: OK
+             description: "OK"
              schema:
                properties:
                  result:
@@ -161,7 +161,7 @@ paths:
            500:
              description: "Internal server error"
 
-###################### Obtain the workflow operation record list ###########################
+###################### Obtain the Workflow Operation Record List ###########################
   "/workFlowTracker:list":
        post:
          description: "Obtain the workflow operation record list"
@@ -174,7 +174,7 @@ paths:
                $ref: "../model/SelectParams.yaml#/definitions/selectParams"
          responses:
            200:
-             description: OK
+             description: "OK"
              schema:
                properties:
                  result:
@@ -199,7 +199,7 @@ paths:
                    type: string
            500:
              description: "Internal server error"
-###################### Delete the operation record ###########################
+###################### Delete the Operation Record ###########################
   "/tracker/{trackerId}:delete":
        post:
          description: "Delete the operation record corresponding to the specified workflow"
@@ -211,7 +211,7 @@ paths:
              type: string
          responses:
            200:
-             description: OK
+             description: "OK"
              schema:
                properties:
                  result:
@@ -224,11 +224,11 @@ paths:
                    type: string
            500:
              description: "Internal server error"
-# Path general parameter
+# Path General Parameter
 parameters:
  regionId:
    name: regionId
    in: path
    required: true
    type: string
-   description: Region ID
+   description: "Region ID"

@@ -19,23 +19,23 @@ https://clouddnsservice.jdcloud-api.com/v1/regions/{regionId}/domain/{domainId}/
 |Name|Type|Required or not|Default value|Description|
 |---|---|---|---|---|
 |**domainName**|String|True||Domain Name|
-|**end**|String|True||Termination time, UTC time, for example, 2017-11-10T23:00:00Z|
-|**start**|String|True||Start time, UTC time, for example, 2017-11-10T23:00:00Z|
+|**end**|String|True||Termination Time, UTC time, for example, 2017-11-10T23:00:00Z|
+|**start**|String|True||Start Time, UTC time, for example, 2017-11-10T23:00:00Z|
 
 
 ## Return parameter
 |Name|Type|Description|
 |---|---|---|
 |**requestId**|String||
-|**result**|[Result](##Result)||
+|**result**|Result||
 
 
-### <a name="Result">Result</a>
+### Result
 |Name|Type|Description|
 |---|---|---|
-|**time**|Integer[]|Time series|
-|**traffic**|Number[]|Data series|
-|**unit**|String|Unit of data|
+|**time**|Integer[]|Time Series|
+|**traffic**|Number[]|Data Series|
+|**unit**|String|Unit of Data|
 
 ## Return code
 |Return code|Description|

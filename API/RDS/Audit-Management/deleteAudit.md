@@ -8,7 +8,7 @@ Disable Database Audit. After the database audit is disabled, the previously gen
 DELETE
 
 ## Request address
-https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/audit
+https://rds.jdcloud-api.com/0.2.9/regions/{regionId}/instances/{instanceId}/audit
 
 |Name|Type|Required or not|Default value|Description|
 |---|---|---|---|---|
@@ -16,7 +16,7 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/audit
 |**regionId**|String|True||Region code, with range detailed in [Regions and Availability Zone Comparison Table](../Enum-Definitions/Regions-AZ.md)|
 
 ## Request parameter
-无
+None
 
 
 ## Return parameter

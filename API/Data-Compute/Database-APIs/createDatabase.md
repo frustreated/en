@@ -12,24 +12,24 @@ https://xdata.jdcloud-api.com/v1/regions/{regionId}/dwDatabase/{databaseName}
 
 |Name|Type|Required or not|Default value|Description|
 |---|---|---|---|---|
-|**databaseName**|String|True||Database name|
+|**databaseName**|String|True||Database Name|
 |**regionId**|String|True||Region ID|
 
 ## Request parameter
 |Name|Type|Required or not|Default value|Description|
 |---|---|---|---|---|
-|**description**|String|False||Database description information|
-|**instanceName**|String|True||Instance name|
+|**description**|String|False||Database Description Information|
+|**instanceName**|String|True||Instance Name|
 
 
 ## Return parameter
 |Name|Type|Description|
 |---|---|---|
 |**requestId**|String||
-|**result**|[Result](##Result)||
+|**result**|Result||
 
 
-### <a name="Result">Result</a>
+### Result
 |Name|Type|Description|
 |---|---|---|
 |**message**|String||

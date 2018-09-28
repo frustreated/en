@@ -24,10 +24,10 @@ https://idata-jmr-api.jcloud.com/v1/regions/{regionId}/monitorServices
 |Name|Type|Description|
 |---|---|---|
 |**requestId**|String||
-|**result**|[Result](##Result)||
+|**result**|Result||
 
 
-### <a name="Result">Result</a>
+### Result
 |Name|Type|Description|
 |---|---|---|
 |**data**|String[]|Service lists under the corresponding cluster|

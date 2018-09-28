@@ -25,10 +25,10 @@ https://mongodb.jdcloud-api.com/v1/regions/{regionId}/backups
 |Name|Type|Description|
 |---|---|---|
 |**requestId**|String||
-|**result**|[Result](##Result)||
+|**result**|Result||
 
 
-### <a name="Result">Result</a>
+### Result
 |Name|Type|Description|
 |---|---|---|
 |**backupId**|String||

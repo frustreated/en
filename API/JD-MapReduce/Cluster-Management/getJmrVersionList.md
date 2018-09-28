@@ -2,7 +2,7 @@
 
 
 ## Description
-Return to the current jmr revision list
+Return to the current JD MapReduce Version List
 
 ## Request method
 GET
@@ -15,20 +15,20 @@ https://idata-jmr-api.jcloud.com/v1/regions/{regionId}/jmrVersions
 |**regionId**|String|True||Region ID|
 
 ## Request parameter
-无
+None
 
 
 ## Return parameter
 |Name|Type|Description|
 |---|---|---|
 |**requestId**|String||
-|**result**|[Result](##Result)||
+|**result**|Result||
 
 
-### <a name="Result">Result</a>
+### Result
 |Name|Type|Description|
 |---|---|---|
-|**data**|String[]|Current jmr revision list|
+|**data**|String[]|Current JD MapReduce Version List|
 |**message**|String||
 |**status**|String||
 

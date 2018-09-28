@@ -2,14 +2,14 @@ swagger: "2.0"
 info:
   version: "v1"
   title: Monitor
-  description: JMR Monitor
+  description: "JMR Monitor"
 
 basePath: /regions/{regionId}
 paths:
- ###################### Query metric data ######################
+ ###################### Query Metric Data ######################
   "/metricData/{clusterId}:query":
        post:
-         description: "Search metric data"
+         description: "Search Metric Data"
          operationId: queryMetricData
          x-jdcloud-internal: true
          parameters:
@@ -17,15 +17,15 @@ paths:
              in: path
              required: true
              type: string
-             description: Cluster ID
+             description: "Cluster ID"
            - name: timeInterval
              in: query
              required: true
              type: string
-             description: Search interval duration, such as 1h
+             description: "Search interval duration, such as 1h"
          responses:
            200:
-             description: OK
+             description: "OK"
              schema:
                properties:
                  result:
@@ -42,7 +42,7 @@ paths:
                    type: string
            500:
              description: "Internal server error"
- ###################### Query metric data ######################
+ ###################### Query Metric Data ######################
   "/{clusterId}/nodeInfo:list":
        post:
          description: "Search the detailed information of nodes under the cluster"
@@ -53,10 +53,10 @@ paths:
              in: path
              required: true
              type: string
-             description: Cluster ID
+             description: "Cluster ID"
          responses:
            200:
-             description: OK
+             description: "OK"
              schema:
                properties:
                  result:
@@ -73,11 +73,11 @@ paths:
                    type: string
            500:
              description: "Internal server error"
-# Path general parameter
+# Path General Parameter
 parameters:
  regionId:
    name: regionId
    in: path
    required: true
    type: string
-   description: Region ID
+   description: "Region ID"

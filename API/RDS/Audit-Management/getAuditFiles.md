@@ -8,7 +8,7 @@ Obtain the list of all audit result files under current instance<br>- Support SQ
 POST
 
 ## Request address
-https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/audit:getAuditFiles
+https://rds.jdcloud-api.com/0.2.9/regions/{regionId}/instances/{instanceId}/audit:getAuditFiles
 
 |Name|Type|Required or not|Default value|Description|
 |---|---|---|---|---|
@@ -16,20 +16,20 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/audit:g
 |**regionId**|String|True||Region code, with range detailed in [Regions and Availability Zone Comparison Table](../Enum-Definitions/Regions-AZ.md)|
 
 ## Request parameter
-无
+None
 
 
 ## Return parameter
 |Name|Type|Description|
 |---|---|---|
-|**result**|[Result](##Result)||
+|**result**|Result||
 
 
-### <a name="Result">Result</a>
+### Result
 |Name|Type|Description|
 |---|---|---|
-|**auditFiles**|[AuditFile[]](##AuditFile)||
-### <a name="AuditFile">AuditFile</a>
+|**auditFiles**|AuditFile[]||
+### AuditFile
 |Name|Type|Description|
 |---|---|---|
 |**lastUpdateTime**|String|Audit Log File Last Update Time|

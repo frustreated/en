@@ -2,7 +2,7 @@ swagger: "2.0"
 info:
   version: "v1"
   title: TOPIC APIs
-  description: Information APIs related to streaming data bus topic
+  description: "Information APIs related to Stream Hub topic"
 
 basePath: /regions/{regionId} 
 
@@ -19,7 +19,7 @@ paths:
           required: false
       responses:
         200:
-          description: OK
+          description: "OK"
           schema:
             type: object
             properties:
@@ -33,12 +33,12 @@ paths:
               requestId:
                 type: string
         401:
-          description: ERROR
+          description: "ERROR"
           
   "/topic":
   ###################### Create topic APIs ######################
     post:
-      description: When creating topic, only the topic parameter in the topicModel needs to be transmitted, and the other two parameters can be blank
+      description: "When creating topic, only the topic parameter in the topicModel needs to be transmitted, and the other two parameters can be blank"
       operationId: addTopic
       parameters:
         - name: topicModel
@@ -49,7 +49,7 @@ paths:
             $ref: "../model/addOrUpdateTopic.yaml#/definitions/topicModel"
       responses:
         200:
-          description: OK
+          description: "OK"
           schema:
             type: object
             properties:
@@ -59,26 +59,26 @@ paths:
                     type: boolean
                   message:
                     type: string
-                    description: "Status information"
+                    description: "Status Information"
               requestId:
                 type: string
         400:
-          description: ERROR
+          description: "ERROR"
                 
   ###################### Update topic APIs ######################
     put:
-      description: The API can be used to update subjects, create archives, modify archives, delete archives; different functions can be realized by transmitting different parameters. To modify the archives, only the parameters of the corresponding archives need to be modified; to delete the archives, only the archive parameters need to be set as blank
+      description: "The API can be used to update subjects, create archives, modify archives, delete archives; different functions can be realized by transmitting different parameters. To modify the archives, only the parameters of the corresponding archives need to be modified; to delete the archives, only the archive parameters need to be set as blank"
       operationId: updateTopic
       parameters:
         - name: topicModel
           in: body
           required: true
-          description: When updating the subject, only the attributes in the topic in the topicModel need to be modified; to create archives, the target and the parameters of archiving destination (mysql, JD Cloud Elasticsearch, Object Storage Service and Data Computing Service) need to be assigned.
+          description: "When updating the subject, only the attributes in the topic in the topicModel need to be modified; to create archives, the target and the parameters of archiving destination (mysql, JCS for Elasticsearch, Object Storage Service and Data Compute) need to be assigned."
           schema:
             $ref: "../model/addOrUpdateTopic.yaml#/definitions/topicModel"
       responses:
         200:
-          description: OK
+          description: "OK"
           schema:
             type: object
             properties:
@@ -88,14 +88,14 @@ paths:
                     type: boolean
                   message:
                     type: string
-                    description: "Status information"
+                    description: "Status Information"
               requestId:
                 type: string
         400:
-          description: ERROR
+          description: "ERROR"
 ###################### Delete topic APIs ######################
     delete:
-      description: "Delete topic"
+      description: "Delete Topic"
       operationId: deleteTopic
       parameters:
         - name: name
@@ -104,7 +104,7 @@ paths:
           type: string
       responses:
         200:
-          description: OK
+          description: "OK"
           schema:
             type: object
             properties:
@@ -114,11 +114,11 @@ paths:
                     type: boolean
                   message:
                     type: string
-                    description: "Status information"
+                    description: "Status Information"
               requestId:
                 type: string
         404:
-          description: NOT FOUND
+          description: "NOT FOUND"
   ###################### View the assigned subject ######################
     get:
       description: "Query the assigned subject, the archiving information will be returned if it has been archived"
@@ -130,7 +130,7 @@ paths:
           type: string
       responses:
         200:
-          description: OK
+          description: "OK"
           schema:
             type: object
             properties:
@@ -142,13 +142,13 @@ paths:
               requestId:
                 type: string
         404:
-          description: NOT FOUND
+          description: "NOT FOUND"
                                 
-# Path general parameter
+# Path General Parameter
 parameters:
   regionId:
     name: regionId
     in: path
     required: true
     type: string
-    description: Region ID
+    description: "Region ID"

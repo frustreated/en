@@ -29,14 +29,14 @@ https://monitor.jdcloud-api.com/v1/regions/{regionId}/alarmHistory
 ## Return parameter
 |Name|Type|Description|
 |---|---|---|
-|**requestId**|String|Requested identifier id|
-|**result**|[Result](##Result)||
+|**requestId**|String|Request ID|
+|**result**|Result||
 
 
 ### <a name="Result">Result</a>
 |Name|Type|Description|
 |---|---|---|
-|**alarmHistoryList**|[AlarmHistory[]](##AlarmHistory)|Alarm history list|
+|**alarmHistoryList**|AlarmHistory[]|Alarm history list|
 |**numberPages**|Number|Number of total pages|
 |**numberRecords**|Number|Number of total records|
 |**pageNumber**|Number|Page|
@@ -45,9 +45,9 @@ https://monitor.jdcloud-api.com/v1/regions/{regionId}/alarmHistory
 |Name|Type|Description|
 |---|---|---|
 |**calculation**|String|Statistical method: average value=avg, maximum value=max, minimum value=min,|
-|**contactGroups**|String[]|Contact group notified, for example [“contact group 1”, “contact group 2”]|
-|**contactPersons**|String[]|Contact notified, for example“[‘contact 1’, ‘contact 2’]”|
-|**deleted**|Integer|Whether the rule has been deleted, 1 represents it has been deleted, 0 represents it has not been deleted, the deleted rules will not be retrieved when using the interface for querying rules|
+|**contactGroups**|String[]|Notify contact group, for example [“contact group 1”, “contact group 2”]|
+|**contactPersons**|String[]|Notify contact, for example“[‘contact 1’, ‘contact 2’]”|
+|**deleted**|Integer|Whether the rule has been deleted, 1 represents it has been deleted, 0 represents it has not been deleted, the deleted rules will not be retrieved when using the API for querying rules|
 |**enabled**|Integer|Enable&Disable 1 Enable, 0 Disable|
 |**id**|String|Rule id|
 |**metric**|String|Monitoring item|

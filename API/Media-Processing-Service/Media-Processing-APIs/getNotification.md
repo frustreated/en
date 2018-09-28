@@ -15,21 +15,21 @@ https://mps.jdcloud-api.com/v1/regions/{regionId}/notification
 |**regionId**|String|True||region id|
 
 ## Request parameter
-无
+None
 
 
 ## Return parameter
 |Name|Type|Description|
 |---|---|---|
 |**requestId**|String||
-|**result**|[Result](##Result)||
+|**result**|Result||
 
 
-### <a name="Result">Result</a>
+### Result
 |Name|Type|Description|
 |---|---|---|
-|**notification**|[Notification](##Notification)||
-### <a name="Notification">Notification</a>
+|**notification**|Notification||
+### Notification
 |Name|Type|Description|
 |---|---|---|
 |**enabled**|Boolean|Whether to enable notifications|

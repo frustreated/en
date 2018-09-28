@@ -15,28 +15,28 @@ https://iam.jdcloud-api.com/v1/regions/{regionId}/userAccessKeys
 |**regionId**|String|True||Region ID|
 
 ## Request parameter
-无
+None
 
 
 ## Return parameter
 |Name|Type|Description|
 |---|---|---|
 |**requestId**|String||
-|**result**|[Result](##Result)||
+|**result**|Result||
 
 
-### <a name="Result">Result</a>
+### Result
 |Name|Type|Description|
 |---|---|---|
-|**userAccessKeys**|[UserAccessKey[]](##UserAccessKey)|userAccessKey list|
-### <a name="UserAccessKey">UserAccessKey</a>
+|**userAccessKeys**|UserAccessKey[]|UserAccessKey list|
+### UserAccessKey
 |Name|Type|Description|
 |---|---|---|
 |**accessKey**|String|accessKey|
 |**accessKeySecret**|String|accessKeySecret|
-|**createTime**|String|Creation time|
-|**state**|Integer|Disabled/enabled status [0-disabled, 1-enabled]|
-|**yn**|Integer|Deleted/valid status [0-deleted, 1-valid]|
+|**createTime**|String|Creation Time|
+|**state**|Integer|Disabled/Enabled Status [0-Disabled, 1-Enabled]|
+|**yn**|Integer|Deleted/Valid Status [0-Deleted, 1-Valid]|
 
 ## Return code
 |Return code|Description|
